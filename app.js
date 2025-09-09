@@ -1,4 +1,7 @@
+const http = require('http');
+const url = require('url');
 
+// Example data
 const availableTimes = {
     Monday: ["1:00", "1:30", "2:00", "2:30", "3:00", "3:30", "4:00", "4:30"],
     Tuesday: ["1:00", "1:30", "2:00", "2:30", "3:00", "3:30", "4:00", "4:30"],
@@ -6,6 +9,8 @@ const availableTimes = {
     Thursday: ["1:00", "1:30", "2:00", "2:30", "3:00", "3:30", "4:00", "4:30"],
     Friday: ["1:30", "2:00", "2:30", "3:00", "3:30", "4:00", "4:30"],
 };
-const appointments = [
-    {name: "James", day: "Wednesday", time: "3:30" },
-    {name: "Lillie", day: "Friday", time: "1:00" }];
+
+let appointments = [
+    { name: "James", day: "Wednesday", time: "3:30" },
+    { name: "Lillie", day: "Friday", time: "1:00" }
+];
